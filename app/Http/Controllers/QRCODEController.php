@@ -31,7 +31,7 @@ class QRCODEController extends AppBaseController
     {
         $qRCODES = $this->qRCODERepository->all();
 
-        return view('q_r_c_o_d_e_s.index')
+        return view('qrcodes.index')
             ->with('qRCODES', $qRCODES);
     }
 
@@ -42,7 +42,7 @@ class QRCODEController extends AppBaseController
      */
     public function create()
     {
-        return view('q_r_c_o_d_e_s.create');
+        return view('qrcodes.create');
     }
 
     /**
@@ -80,7 +80,7 @@ class QRCODEController extends AppBaseController
             return redirect(route('qRCODES.index'));
         }
 
-        return view('q_r_c_o_d_e_s.show')->with('qRCODE', $qRCODE);
+        return view('qrcodes.show')->with('qRCODE', $qRCODE);
     }
 
     /**
@@ -100,7 +100,7 @@ class QRCODEController extends AppBaseController
             return redirect(route('qRCODES.index'));
         }
 
-        return view('q_r_c_o_d_e_s.edit')->with('qRCODE', $qRCODE);
+        return view('qrcodes.edit')->with('qRCODE', $qRCODE);
     }
 
     /**

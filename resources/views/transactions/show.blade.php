@@ -3,15 +3,15 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Q R C O D E
+            Transaction
         </h1>
     </section>
     <div class="content">
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
-                    @include('q_r_c_o_d_e_s.show_fields')
-                    <a href="{{ route('qRCODES.index') }}" class="btn btn-default">Back</a>
+                    @include('transactions.show_fields')
+                    <a href="{{ route('transactions.index') }}" class="btn btn-default">Back</a>
                 </div>
             </div>
         </div>

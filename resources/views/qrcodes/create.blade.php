@@ -13,7 +13,7 @@
                 <div class="row">
                     {!! Form::open(['route' => 'qRCODES.store']) !!}
 
-                        @include('q_r_c_o_d_e_s.fields')
+                        @include('qrcodes.fields')
 
                     {!! Form::close() !!}
                 </div>

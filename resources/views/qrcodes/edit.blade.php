@@ -11,9 +11,9 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($qRCODE, ['route' => ['qRCODES.update', $qRCODE->id], 'method' => 'patch']) !!}
+                   {!! Form::model($Qrcode, ['route' => ['Qrcodes.update', $Qrcode->id], 'method' => 'patch']) !!}
 
-                        @include('q_r_c_o_d_e_s.fields')
+                        @include('qrcodes.fields')
 
                    {!! Form::close() !!}
                </div>
